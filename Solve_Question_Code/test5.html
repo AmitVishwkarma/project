@@ -1,0 +1,29 @@
+
+
+    <title>File directory</title>
+    <script>
+     const fs = require('fs');
+     const path = require('path');
+     const dirPoth= poth.join(__dirname,'files');
+
+//   // ----------------Add Directory file-----------
+
+
+// for(i=0; i<4; i++)
+// {
+//   fs.writeFileSync(dirPoth+"/Amit"+i+".txt", "a simple tet file");
+//   // fs.writeFileSync(`Amit${i+}.txt`, "a simple tet file");
+
+
+// }
+
+  // --------------------- Show all files name List ------------------------------- 
+
+fs.readdir(dirPoth,(err, files)=>{
+files.forEach((item)=>{
+  console.log("file name is",item)
+})
+
+})
+
+    </script>

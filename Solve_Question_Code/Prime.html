@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+                    function Prime()
+            {
+                var i,num=0,number;
+                number = Number(document.getElementById("N").value);
+ 
+                for(i=2; i <= number/2; i++)
+                {
+                    if(number%i == 0)
+                    {
+                        num = 1;
+                        break;
+                    }
+                }
+                if(num == 0)
+                {
+                    window.alert(number+"-The inputed number is Prime");
+                }
+                else
+                {
+                    window.alert(number+"-The inputted number is not Prime");
+
+                    //  ------12,24,.. is not Prime nnumber-------------
+                }
+            }
+    </script>
+</head>
+<body>
+    <h1>Enter a number is Prime or not</h1>
+    Enter The Number :<input type="text" name="n" id = "N"/>
+    <hr color="cyan">
+    <br>
+    <button onClick="Prime()">CHECK</button>
+</body>
+</html>
