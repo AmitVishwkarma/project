@@ -11,7 +11,7 @@ async function displayStudentTimeEntries() {
       console.log(`Student: ${student.firstName} ${student.lastName}`);
       console.log('Time Entries:');
       console.log(timeEntries);
-      console.log('-----------------------------------------');
+      
     }
   } catch (error) {
     console.error('Error:', error);
